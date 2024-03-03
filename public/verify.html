@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="px-20 py-20">
+      <p>{}</p>
+    </div>
+
+    <script>
+      const url = window.location.host;
+      console.log(url);
+      alert(`${url} will appear on the list once approved`);
+      /*  fetch(
+        `https://lskit-mern-backend.vercel.app/offer-backlink/verify/${url}`,
+        { method: "PATCH" }
+      )
+        .then((res) => {
+          res.json();
+          if (res.status === 200) {
+            alert("Verified Successfully");
+          }
+        })
+        .catch((error) => alert(error.message)); */
+    </script>
+  </body>
+</html>
